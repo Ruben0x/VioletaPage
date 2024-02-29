@@ -9,9 +9,9 @@ import VioletButton from '../styles/buttons';
 export const NavBar = () => {
   return (
     <NavBarContainer>
-      <div>
+      <LogoContainer>
         <LogoNav src={logoVioleta} alt='logoVioleta' />
-      </div>
+      </LogoContainer>
       <NavList>
         <ul>
           <li>
@@ -58,49 +58,66 @@ const NavBarContainer = styled.nav`
   width: auto;
 `;
 
-const NavBarC = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5%;
-`;
 const NavList = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55%;
 
   ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    gap: 1%;
 
     li {
+      font-size: 1.3vw;
       font-weight: 500;
-      text-transform: uppercase;
-      justify-items: center;
-      text-align: center;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0;
       cursor: pointer;
     }
   }
 `;
 
+const LogoNav = styled.img`
+  max-width: 100%;
+  height: auto;
+`;
+
+const LogoContainer = styled.div`
+  width: 15%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+`;
+
+const NavBarC = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  width: 25%;
+
+  button {
+    width: 50%;
+  }
+`;
 const IconsContainer = styled.div`
   display: flex;
   flex-direction: row;
-`;
-
-const LogoNav = styled.img`
-  max-width: 250px;
-  height: auto;
+  width: 50%;
 `;
 
 const Icons = styled.img`
-  width: 40px;
+  width: 33%;
   height: auto;
-  padding: 0 5px;
+  padding: 0 1%;
   cursor: pointer;
 `;

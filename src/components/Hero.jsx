@@ -22,9 +22,9 @@ export const Hero = () => {
 };
 
 const Container = styled.div`
+  padding: 0 5%;
   display: flex;
   align-items: center;
-  width: auto;
   justify-content: center;
   margin-top: 40px;
 `;
@@ -32,7 +32,7 @@ const Container = styled.div`
 const ContainerTexto = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
   button {
     align-self: center;
     text-transform: uppercase;
@@ -40,8 +40,11 @@ const ContainerTexto = styled.div`
 `;
 
 const ContainerImg = styled.div`
+  width: 50%;
+  text-align: right;
   img {
-    width: 600px;
+    height: auto;
+    width: 80%;
   }
 `;
 
@@ -49,4 +52,5 @@ const HeroH1 = styled.h1`
   font-size: 53px;
   text-align: left;
   color: #f8d906;
+  margin: 0;
 `;

@@ -29,7 +29,7 @@ const ContainerHeader = styled.div`
 `;
 
 const HeroH1 = styled.h1`
-  font-size: 53px;
+  font-size: 4.5vw;
   text-align: left;
   color: #f8d906;
   padding-left: 5%;

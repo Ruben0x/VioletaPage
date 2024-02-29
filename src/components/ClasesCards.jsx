@@ -74,7 +74,7 @@ export const ClasesCards = () => {
       <GridContainer>
         <GridCards>
           {listaClases.map((clase) => (
-            <Card clase={clase} />
+            <Card key={clase.id} clase={clase} />
           ))}
         </GridCards>
       </GridContainer>
@@ -85,9 +85,9 @@ export const ClasesCards = () => {
 const GridCards = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 30px;
 `;
 
 const GridContainer = styled.section`
-  margin: 0 20%;
+  margin: 5% 15%;
 `;
